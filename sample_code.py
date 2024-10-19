@@ -36,7 +36,7 @@ df
 
 #%% Download some reports
 # EXAMPLE: select Apple reports
-df_sample = df[df['company_name'] == 'Apple']
+df_sample = df[df['dataset'] == 'handcrafted']
 
 
 #%%
