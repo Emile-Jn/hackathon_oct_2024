@@ -86,10 +86,7 @@ documents = get_documents_from_path(REPORTS_SAVE_PATH)
 with psycopg.connect("host=localhost port=5432 dbname=vectordb user=postgres password=") as conn:
     with conn.cursor() as cur:
         cur.execute("""
-            CREATE TABLE test (
-                id serial PRIMARY KEY,
-                num integer,
-                data text)
+            SELECT * FROM reports;
             """)
 
 #%%
